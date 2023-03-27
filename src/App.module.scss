@@ -38,6 +38,9 @@ body{
       margin-bottom: 40px;
       width: 444px;
     }
+    .mobileDiv{
+      display: none;
+    }
     .randomizeButton{
       width: 64px;
       height: 64px;
@@ -56,3 +59,27 @@ body{
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  body{
+    .container{
+      padding: 40px 24px 0 24px;
+      span{
+        font-size: 11px;
+      }
+      .desktopDiv{
+        display: none;
+      }
+      .mobileDiv{
+        display: unset;
+      }
+      h1{
+        width: 295px;
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      .randomizeButton{
+        margin-top: 32px;
+      }
+    }
+  }
+}
